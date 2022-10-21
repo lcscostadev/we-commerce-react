@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { shoes, glasses } from '../assets/index';
 
 const featuredProducts = [
     'src/assets/pic1.jpg',
@@ -55,7 +56,7 @@ export default function Slider() {
     };
 
     return (
-        <div className="max-w-[1200px] m-auto">
+        <div className="max-w-[1280px] m-auto">
             <div ref={slideRef} className="w-full relative select-none ">
                 <img src={featuredProducts[currentIndex]} alt="" />
                 <div className="absolute w-full top-1/2 transform -translate-y-1/2 flex justify-between items-start px-3">
@@ -65,6 +66,39 @@ export default function Slider() {
                     <button onClick={handleOnNextClick} className="text-white">
                         <ion-icon name="arrow-forward-circle-outline" size="large"></ion-icon>
                     </button>
+                </div>
+                <div className='absolute bottom-[20px] left-[90px] '>
+                    <div className=' rounded flex gap-6 items-center'>
+                        <div className='flex gap-3 flex-col items-left bg-white p-4'>
+                            <h1 className='text-[25px] font-semibold'>Confira Sapatos</h1>
+                            <a href="#">
+                                <img className='max-w-[320px]' src={shoes} alt="black shoes" />
+                            </a>
+                            <a href="#" className='font-bold' >
+                                <p className='text-[13px] hover:text-sky-400 text-sky-600'>Veja mais</p>
+                            </a>
+                        </div>
+
+                        <div className='flex gap-3 flex-col items-left bg-white p-4'>
+                            <h1 className='text-[25px]  font-semibold'>Confira Sapatos</h1>
+                            <a href="#">
+                                <img className='max-w-[320px]' src={glasses} alt="black shoes" />
+                            </a>
+                            <a href="#" className='font-bold' >
+                                <p className='text-[13px] hover:text-sky-400 text-sky-600'>Veja mais</p>
+                            </a>
+                        </div>
+
+                        <div className='flex gap-3 flex-col items-left bg-white p-4'>
+                            <h1 className='text-[25px] font-semibold'>Confira Sapatos</h1>
+                            <a href="#">
+                                <img className='max-w-[320px]' src={shoes} alt="black shoes" />
+                            </a>
+                            <a href="#" className='font-bold' >
+                                <p className='text-[13px] hover:text-sky-400 text-sky-600'>Veja mais</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,15 +1,26 @@
 import React from 'react';
-import { Navbar, Slider } from './components';
+import { Navbar, Slider, Items } from './components';
 import './App.css'
 
 function App() {
 
   return (
     <>
-      <div>
+      <header>
         <Navbar />
-      </div>
-      <Slider />
+      </header>
+
+      <main>
+
+        <section >
+          <Slider />
+        </section>
+
+        <section>
+          <Items />
+        </section>
+
+      </main>
     </>
   )
 }
