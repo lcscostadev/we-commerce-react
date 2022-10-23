@@ -12,15 +12,11 @@ export const navLinks = [
         title: 'Games'
     },
     {
-        id: 'bla',
-        title: 'bla'
+        id: 'clothes',
+        title: 'Clothes'
     },
     {
-        id: 'bla2',
-        title: 'bla2'
-    },
-    {
-        id: 'bla3',
-        title: 'bla3'
+        id: 'books',
+        title: 'Books'
     },
 ]

@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { navLinks } from '../constants';
 import { Button } from './index';
 
 const Navbar = () => {
+
+    const [count, setCount] = useState(0);
 
     return (
         <>
@@ -23,16 +25,16 @@ const Navbar = () => {
                     <div>
                         <Button>Login</Button>
                     </div>
-                    <button className='flex items-center gap-1 bg-orange-500 text-white font-[Poppins] py-2 px-6 rounded  hover:bg-orange-300 duration-500'>
-                        Shop
-                        <ion-icon name="cart-outline"></ion-icon>
+                    <button onClick={() => setCount(count + 1)} className='flex items-center gap-1 bg-orange-500 text-white font-[Poppins] py-2 px-6 rounded  hover:bg-orange-300 duration-500'>
+                        <ion-icon name="cart-outline" size="large"></ion-icon>
+                        <span className='text-[20px]'>{count}</span>
                     </button>
                 </div>
 
                 <nav >
-                    <ul className='flex gap-2 '>
+                    <ul className='flex gap-3 '>
                         {navLinks.map((nav, index) => (
-                            <li key={nav.id}>
+                            <li key={nav.id} className="hover:border-white border p-2 rounded border-[#0f131a]">
                                 <a href={`#${nav.id}`}>{nav.title}</a>
                             </li>
                         ))}
