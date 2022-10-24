@@ -1,26 +1,25 @@
 import React from 'react';
-import { Navbar, Slider, Items } from './components';
+import { Navbar, Slider, Items, BannerApp } from './components';
 import './App.css'
 
 function App() {
 
   return (
     <>
-      <header>
-        <Navbar />
-      </header>
-
-      <main>
-
-        <section >
-          <Slider />
-        </section>
-
-        <section>
-          <Items />
-        </section>
-
-      </main>
+      <div className='bg-[#EAEDED] '>
+        <header>
+          <Navbar />
+        </header>
+        <main className='max-w-[1280px] mx-auto'>
+          <section >
+            <Slider />
+          </section>
+          <section>
+            <Items />
+            <BannerApp />
+          </section>
+        </main>
+      </div>
     </>
   )
 }

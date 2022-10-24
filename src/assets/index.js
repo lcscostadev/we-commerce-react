@@ -9,6 +9,8 @@ import smartLamp from './Smart-Lamp.jpg';
 import echoDot from './Echo-Dot.jpg';
 import echoDotSupport from './echoDotSupport.jpg';
 import standSupport from './standSupport.jpg';
+import weCommerceApp from './we-commerce-app.png';
+import qrCode from './qrCode.png';
 
 export {
     glasses,
@@ -21,5 +23,7 @@ export {
     smartLamp,
     echoDot,
     echoDotSupport,
-    standSupport
+    standSupport,
+    weCommerceApp,
+    qrCode,
 }

@@ -12,11 +12,7 @@ export const navLinks = [
         title: 'Games'
     },
     {
-        id: 'clothes',
-        title: 'Clothes'
-    },
-    {
-        id: 'books',
-        title: 'Books'
-    },
+        id: 'categories',
+        title: 'All Categories'
+    }
 ]
