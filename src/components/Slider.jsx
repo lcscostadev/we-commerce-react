@@ -70,32 +70,32 @@ export default function Slider() {
                 <div className='absolute bottom-[20px] left-[90px] '>
                     <div className=' rounded flex gap-6 items-center'>
                         <div className='flex gap-3 flex-col items-left bg-white p-4'>
-                            <h1 className='text-[25px] font-semibold'>Confira Sapatos</h1>
+                            <h1 className='text-[25px] font-semibold'>Test item 1</h1>
                             <a href="#">
                                 <img className='max-w-[320px]' src={shoes} alt="black shoes" />
                             </a>
                             <a href="#" className='font-bold' >
-                                <p className='text-[13px] hover:text-sky-400 text-sky-600'>Veja mais</p>
+                                <p className='text-[13px] hover:text-sky-400 text-sky-600'>See More</p>
                             </a>
                         </div>
 
                         <div className='flex gap-3 flex-col items-left bg-white p-4'>
-                            <h1 className='text-[25px]  font-semibold'>Confira Sapatos</h1>
+                            <h1 className='text-[25px]  font-semibold'>Test item 2</h1>
                             <a href="#">
                                 <img className='max-w-[320px]' src={glasses} alt="black shoes" />
                             </a>
                             <a href="#" className='font-bold' >
-                                <p className='text-[13px] hover:text-sky-400 text-sky-600'>Veja mais</p>
+                                <p className='text-[13px] hover:text-sky-400 text-sky-600'>See More</p>
                             </a>
                         </div>
 
                         <div className='flex gap-3 flex-col items-left bg-white p-4'>
-                            <h1 className='text-[25px] font-semibold'>Confira Sapatos</h1>
+                            <h1 className='text-[25px] font-semibold'>Test item 1</h1>
                             <a href="#">
                                 <img className='max-w-[320px]' src={shoes} alt="black shoes" />
                             </a>
                             <a href="#" className='font-bold' >
-                                <p className='text-[13px] hover:text-sky-400 text-sky-600'>Veja mais</p>
+                                <p className='text-[13px] hover:text-sky-400 text-sky-600'>See More</p>
                             </a>
                         </div>
                     </div>

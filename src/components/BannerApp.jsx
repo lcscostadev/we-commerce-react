@@ -5,7 +5,7 @@ const BannerApp = () => {
     return (
         <>
             <div>
-                <div className='flex items-center justify-items-start gap-20 cursor-pointer bg-zinc-300'>
+                <div className='flex items-center justify-items-start gap-20 bg-zinc-300'>
                     <div>
                         <img className='max-w-[350px]' src={weCommerceApp} alt="" />
                     </div>

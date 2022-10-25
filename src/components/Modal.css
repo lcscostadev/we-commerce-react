@@ -1,0 +1,66 @@
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(200, 200, 200, 0.344);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 19999999999999999999;
+}
+
+.modalContainer {
+    width: 500px;
+    height: 300px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    box-shadow: -5px 7px 54px -6px rgba(0, 0, 0, 0.75);
+}
+
+.btnClose {
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+    font-size: 25px;
+    cursor: pointer;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.modalContainer .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.inputBox {
+    padding: 5px;
+    border: 2px solid #222;
+    background: rgb(231, 230, 230);
+}
+
+.modalContainer .footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContainer .footer button {
+    width: 150px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}

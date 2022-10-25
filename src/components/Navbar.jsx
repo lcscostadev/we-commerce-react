@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { navLinks } from '../constants';
-import { Button } from './index';
+import { Button, Modal } from './index';
 
 const Navbar = () => {
 
     const [count, setCount] = useState(0);
+    const [openModal, setOpenModal] = useState(false);
 
     return (
         <>
+            {openModal && <Modal closeModal={setOpenModal} />}
             <header className='bg-[#0f131a] text-white p-3'>
                 <div className='flex items-center justify-between'>
                     <div className='text-3xl mr-1 font-bold cursor-pointer pt-2 flex items-center'>
@@ -23,7 +25,7 @@ const Navbar = () => {
                         </button>
                     </div>
                     <div>
-                        <Button>Login</Button>
+                        <button className='hover:border-white border p-2 rounded border-[#0f131a] font-bold' onClick={() => setOpenModal(true)}>Sign in</button>
                     </div>
                     <button onClick={() => setCount(count + 1)} className='flex items-center gap-1 bg-orange-500 text-white font-[Poppins] py-2 px-6 rounded  hover:bg-orange-300 duration-500'>
                         <ion-icon name="cart-outline" size="large"></ion-icon>
@@ -31,7 +33,7 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                <nav >
+                <nav>
                     <ul className='flex gap-3 '>
                         {navLinks.map((nav, index) => (
                             <li key={nav.id} className="hover:border-white border p-2 rounded border-[#0f131a]">
