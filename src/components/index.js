@@ -1,17 +1,21 @@
+import Home from "./Home";
 import Navbar from "./Navbar";
-import Button from "./Button";
 import Slider from "./Slider";
-import Items from "./Items";
-import BannerApp from "./BannerApp";
 import Modal from './Modal';
+import BannerApp from "./BannerApp";
 import Footer from './Footer';
+import CategoriesPage from "./CategoriesPage";
+import Button from "./Button";
+import Items from "./Items";
 
 export {
+    Home,
     Navbar,
     Button,
     Slider,
     Items,
     BannerApp,
     Modal,
-    Footer
+    Footer,
+    CategoriesPage,
 }

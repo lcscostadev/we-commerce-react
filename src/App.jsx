@@ -1,34 +1,27 @@
 import React from 'react';
-import { Navbar, Slider, Items, BannerApp, Footer } from './components';
+import { CategoriesPage, Home } from './components/index';
+import { Route, Routes } from 'react-router-dom';
 import './App.css'
+
 
 function App() {
 
   return (
     <>
-      <div className='bg-[#EAEDED] '>
+      <Routes>
+        <Route path='/' element={<Home />} />
 
-        <header>
-          <Navbar />
-        </header>
+        <Route path='/categories' element={<CategoriesPage />} />
+        <Route path='/eletronics' element={<CategoriesPage />} />
+        <Route path='/computers' element={<CategoriesPage />} />
+        <Route path='/games' element={<CategoriesPage />} />
 
-        <main className='max-w-[1280px] mx-auto'>
-          <section >
-            <Slider />
-          </section>
-
-          <section>
-            <Items />
-            <BannerApp />
-          </section>
-        </main>
-
-        <footer>
-          <Footer />
-        </footer>
-      </div>
+      </Routes>
     </>
   )
 }
 
 export default App
+
+
+// ZIP/Sign in/Shop needs useEffect for localStorage

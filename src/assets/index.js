@@ -11,6 +11,8 @@ import echoDotSupport from './echoDotSupport.jpg';
 import standSupport from './standSupport.jpg';
 import weCommerceApp from './we-commerce-app.png';
 import qrCode from './qrCode.png';
+import menu from './menu.svg';
+import close from './close.svg';
 
 export {
     glasses,
@@ -26,4 +28,6 @@ export {
     standSupport,
     weCommerceApp,
     qrCode,
+    menu,
+    close,
 }
