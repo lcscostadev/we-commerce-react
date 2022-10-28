@@ -13,6 +13,9 @@ import weCommerceApp from './we-commerce-app.png';
 import qrCode from './qrCode.png';
 import menu from './menu.svg';
 import close from './close.svg';
+import games from './games.jpg';
+import refrigerator from './refrigerator.jpg';
+import computer from './computer.jpg';
 
 export {
     glasses,
@@ -30,4 +33,7 @@ export {
     qrCode,
     menu,
     close,
+    games,
+    refrigerator,
+    computer,
 }

@@ -7,6 +7,9 @@ import Footer from './Footer';
 import CategoriesPage from "./CategoriesPage";
 import Button from "./Button";
 import Items from "./Items";
+import ComputersPage from "./ComputersPage";
+import EletronicsPage from "./EletronicsPage";
+import GamesPage from "./GamesPage";
 
 export {
     Home,
@@ -18,4 +21,7 @@ export {
     Modal,
     Footer,
     CategoriesPage,
+    ComputersPage,
+    EletronicsPage,
+    GamesPage,
 }
