@@ -1,5 +1,4 @@
 import React from 'react';
-import { echoDot, miniSmart, smartLamp, standSupport, echoDotSupport } from '../assets';
 import Item from './Item';
 import Carousel from 'react-elastic-carousel';
 

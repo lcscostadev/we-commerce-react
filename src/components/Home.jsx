@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Slider, Items, BannerApp, Footer, CategoriesPage } from './index';
+import { Navbar, Slider, Items, BannerApp, Footer, NewestItems } from './index';
 
 
 function Home() {
@@ -19,6 +19,10 @@ function Home() {
                     <section>
                         <Items />
                         <BannerApp />
+                    </section>
+
+                    <section>
+                        <NewestItems />
                     </section>
                 </main>
 

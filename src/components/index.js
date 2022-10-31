@@ -10,6 +10,7 @@ import Items from "./Items";
 import ComputersPage from "./ComputersPage";
 import EletronicsPage from "./EletronicsPage";
 import GamesPage from "./GamesPage";
+import NewestItems from "./NewestItems";
 
 export {
     Home,
@@ -24,4 +25,5 @@ export {
     ComputersPage,
     EletronicsPage,
     GamesPage,
+    NewestItems,
 }
