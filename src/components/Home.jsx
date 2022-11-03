@@ -23,6 +23,7 @@ function Home() {
 
                     <section>
                         <NewestItems />
+                        <NewestItems />
                     </section>
                 </main>
 
