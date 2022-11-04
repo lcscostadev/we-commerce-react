@@ -4,7 +4,7 @@ import { close, menu } from '../assets';
 import { Button, Modal } from './index';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({ updated }) => {
 
     // Fake shop
     const [count, setCount] = useState(0);
@@ -26,8 +26,8 @@ const Navbar = () => {
 
                         </Link>
                     </div>
-                    <div className='hidden lg:flex'>
-                        <Button>Hi, select <br /> your address</Button>
+                    <div className='hidden md:flex hover:border-white border p-2 rounded border-[#0f131a] font-bold'>
+                        <button>Hi, select <br /> your address</button>
                     </div>
                     <div className='flex'>
                         <input className=' outline-none md:w-[300px] 2xl:w-[1200px] lg:w-[200px] xl:w-[900px] w-[100px] rounded-l-lg py-2 px-2 text-black font-normal' type="text" placeholder='search...' />
@@ -35,8 +35,11 @@ const Navbar = () => {
                             <ion-icon name="search-outline"></ion-icon>
                         </button>
                     </div>
+                    {/* <div>
+                        <button onClick={() => setOpenModal(true)} className='hidden md:flex hover:border-white border p-2 rounded border-[#0f131a] font-bold'>{updated}</button>
+                    </div> */}
                     <div>
-                        <button className='hidden md:flex hover:border-white border p-2 rounded border-[#0f131a] font-bold' onClick={() => setOpenModal(true)}>Sign in</button>
+                        <button onClick={() => setOpenModal(true)} className='hidden md:flex hover:border-white border p-2 rounded border-[#0f131a] font-bold'>Sign in</button>
                     </div>
                     <button onClick={() => setCount(count + 1)} className=' flex items-center gap-1 md:marker:bg-orange-500 text-white font-[Poppins] py-2 px-6 rounded  md:hover:bg-orange-300 duration-500'>
                         <ion-icon name="cart-outline" size="large"></ion-icon>
